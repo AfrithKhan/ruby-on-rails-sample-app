@@ -1,5 +1,5 @@
 name: reviewdog
-on: [pull_request]
+on: push
 jobs:
   brakeman:
     name: runner / brakeman
@@ -15,4 +15,5 @@ jobs:
         uses: reviewdog/action-brakeman@v2
         with:
           brakeman_version: 4.8.2
-          reporter: github-pr-review ###
+          brakeman_flags: '--no-exit-on-error --no-exit-on-warn'
+          fail_on_error: "true"
