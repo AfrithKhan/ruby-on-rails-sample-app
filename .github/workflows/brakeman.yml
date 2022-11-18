@@ -16,4 +16,5 @@ jobs:
         with:
           brakeman_version: 4.8.2
           reporter: github-pr-review ####
-          fail_on_error: false
+          fail_on_error: true
+          level: info
