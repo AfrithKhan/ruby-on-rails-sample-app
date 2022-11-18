@@ -14,5 +14,4 @@ jobs:
       - name: brakeman
         uses: reviewdog/action-brakeman@v2
         with:
-          brakeman_version: 4.8.2
-          reporter: github-pr-review ###
+          brakeman_flags: '--no-exit-on-error --no-exit-on-warn'
