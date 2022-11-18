@@ -14,6 +14,5 @@ jobs:
       - name: brakeman
         uses: reviewdog/action-brakeman@v2
         with:
-          brakeman_version: 4.8.2
           brakeman_flags: '--no-exit-on-error --no-exit-on-warn'
           fail_on_error: "true"
