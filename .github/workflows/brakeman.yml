@@ -15,4 +15,3 @@ jobs:
         uses: reviewdog/action-brakeman@v2
         with:
           brakeman_flags: '--no-exit-on-error --no-exit-on-warn'
-          fail_on_error: "true"
