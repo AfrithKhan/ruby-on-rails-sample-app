@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160609220802) do
     t.string   "picture"
     t.index ["user_id"], name: "index_microposts_on_user_id"
   end
-
+####
   create_table "relationships", force: :cascade do |t|
     t.integer  "follower_id"
     t.integer  "followed_id"
