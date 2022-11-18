@@ -1,5 +1,5 @@
 name: reviewdog
-on: [pull_request]
+on: push
 jobs:
   brakeman:
     name: runner / brakeman
@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: 3.0.3
       - name: brakeman
-        uses: reviewdog/action-yamllint@v1
+        uses: reviewdog/action-brakeman@v2
         with:
           brakeman_version: 4.8.2
           brakeman_flags: '--no-exit-on-error --no-exit-on-warn'
